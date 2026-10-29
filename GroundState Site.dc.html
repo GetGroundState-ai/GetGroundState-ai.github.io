@@ -12,7 +12,19 @@
 <link rel="icon" type="image/png" href="logo/groundstate-icon-dark-tile.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;1,6..72,400&amp;family=Hanken+Grotesk:wght@400;500;600&amp;family=JetBrains+Mono:wght@400;500&amp;display=swap" rel="stylesheet">
-<style>html{scroll-behavior:smooth}body{margin:0;background:#0f1113}a{color:#4fd0b8;text-decoration:none}a:hover{color:#f3f0ea}</style>
+<style>html{scroll-behavior:smooth}body{margin:0;background:#0f1113}a{color:#4fd0b8;text-decoration:none}a:hover{color:#f3f0ea}
+@media (max-width:720px){
+section{padding-top:56px!important;padding-bottom:56px!important}
+[data-screen-label="Hero"]{min-height:92svh;padding-top:128px!important;padding-bottom:56px!important}
+[data-screen-label="CTA"]{min-height:auto;padding-top:72px!important;padding-bottom:88px!important}
+#approach{gap:32px!important;padding-top:56px!important}
+#approach>div:nth-child(2){gap:44px!important;padding:8px 0 0!important}
+[data-screen-label="Outcome Owner"]{gap:40px!important}
+[data-screen-label="Outcome Owner"]>div:nth-child(2){gap:28px!important}
+[data-screen-label="AI"]{gap:36px!important}
+#team{gap:48px!important}
+#process,[data-screen-label="Commitments"]{gap:28px!important}
+}</style>
 </helmet>
 <div id="top" ref="{{ rootRef }}" style="position:relative;background:#0f1113;color:#f3f0ea;font-family:'Hanken Grotesk',system-ui,sans-serif">
 <canvas ref="{{ canvasRef }}" style="position:fixed;inset:0;width:100vw;height:100vh;pointer-events:none;z-index:0"></canvas>
