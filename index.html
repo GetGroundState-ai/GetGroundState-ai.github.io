@@ -4,13 +4,13 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>GroundState — We find your GroundState, and improve it</title>
-<meta name="description" content="One named Outcome Owner. We find out where your business loses time and money, agree on what should improve, then build the software and automation that fixes it.">
+<meta name="description" content="We name one Outcome Owner. Then we find out where your business loses time and money, agree on what should improve, then build the software and automation that solves the problem.">
 <meta name="theme-color" content="#0f1113">
 <link rel="canonical" href="https://groundstate.keithhanson.io/">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="GroundState">
 <meta property="og:title" content="GroundState — We find your GroundState, and improve it">
-<meta property="og:description" content="One named Outcome Owner. We find out where your business loses time and money, agree on what should improve, then build the software and automation that fixes it.">
+<meta property="og:description" content="We name one Outcome Owner. Then we find out where your business loses time and money, agree on what should improve, then build the software and automation that solves the problem.">
 <meta property="og:url" content="https://groundstate.keithhanson.io/">
 <meta property="og:image" content="https://groundstate.keithhanson.io/images/og-image.png">
 <meta property="og:image:width" content="1200">
@@ -18,7 +18,7 @@
 <meta property="og:image:alt" content="GroundState: We find your GroundState, and improve it.">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="GroundState — We find your GroundState, and improve it">
-<meta name="twitter:description" content="One named Outcome Owner. We find out where your business loses time and money, agree on what should improve, then build the software and automation that fixes it.">
+<meta name="twitter:description" content="We name one Outcome Owner. Then we find out where your business loses time and money, agree on what should improve, then build the software and automation that solves the problem.">
 <meta name="twitter:image" content="https://groundstate.keithhanson.io/images/og-image.png">
 <meta name="twitter:image:alt" content="GroundState: We find your GroundState, and improve it.">
 <script src="./support.js"></script>
@@ -31,31 +31,43 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;1,6..72,400&amp;family=Hanken+Grotesk:wght@400;500;600&amp;family=JetBrains+Mono:wght@400;500&amp;display=swap" rel="stylesheet">
 <style>html{scroll-behavior:smooth}body{margin:0;background:#0f1113}a{color:#4fd0b8;text-decoration:none}a:hover{color:#f3f0ea}
+[style*="border-radius:14px"],[style*="border-radius:12px"],[style*="border-radius:10px"],[style*="border-radius:8px"]{border-radius:4px!important}
+a[href*="calendly.com"]{border-radius:6px!important}
 @media (max-width:720px){
 section{padding-top:56px!important;padding-bottom:56px!important}
 [data-screen-label="Hero"]{min-height:92svh;padding-top:128px!important;padding-bottom:56px!important}
 [data-screen-label="CTA"]{min-height:auto;padding-top:72px!important;padding-bottom:88px!important}
 #approach{gap:32px!important;padding-top:56px!important}
 #approach>div:nth-child(2){gap:44px!important;padding:8px 0 0!important}
+#approach h2{font-size:clamp(28px,8vw,34px)!important;white-space:nowrap}
 [data-screen-label="Outcome Owner"]{gap:40px!important}
 [data-screen-label="Outcome Owner"]>div:nth-child(2){gap:28px!important}
 [data-screen-label="AI"]{gap:36px!important}
 #team{gap:48px!important}
 #process,[data-screen-label="Commitments"]{gap:28px!important}
+.desktop-break{display:none}
+.state-hud{left:6px!important;right:6px!important;bottom:max(6px,env(safe-area-inset-bottom))!important;width:auto!important;min-height:28px;box-sizing:border-box;flex-direction:row!important;align-items:center;gap:8px!important;padding:5px 8px!important;border-radius:4px!important}
+.state-hud{letter-spacing:.04em!important}
+.state-label{font-size:0}
+.state-label::after{content:"STATE";font-size:9px}
+.state-hud>div:first-child{display:contents!important}
+.state-hud>div:nth-child(2){font-size:11px!important;white-space:nowrap}
+.state-hud>div:nth-child(3){flex:1;min-width:36px}
+footer{padding-bottom:64px!important}
 }</style>
 </helmet>
 <div id="top" ref="{{ rootRef }}" style="position:relative;background:#0f1113;color:#f3f0ea;font-family:'Hanken Grotesk',system-ui,sans-serif">
 <canvas ref="{{ canvasRef }}" style="position:fixed;inset:0;width:100vw;height:100vh;pointer-events:none;z-index:0"></canvas>
 
 <header style="position:fixed;top:0;left:0;right:0;z-index:10;display:flex;justify-content:space-between;align-items:center;gap:24px;padding:16px clamp(20px,4vw,56px);background:rgba(15,17,19,0.6);backdrop-filter:blur(10px);border-bottom:1px solid rgba(243,240,234,0.08)">
-<a href="#top" aria-label="GroundState home" style="display:flex;align-items:center;gap:10px;color:#f3f0ea"><span aria-hidden="true" style="width:36px;height:36px;border-radius:8px;background:#1b1e21;border:1px solid rgba(243,240,234,0.12);display:flex;align-items:center;justify-content:center;flex-shrink:0"><svg width="25" height="25" viewBox="0 0 48 48" fill="none" style="display:block"><path d="M38.5 13.5A17 17 0 1 0 41 26" stroke="#f3f0ea" stroke-width="4.6"></path><path d="M24 26H41" stroke="#4fd0b8" stroke-width="4.6" stroke-linecap="round"></path></svg></span><span style="font-family:'Newsreader',serif;font-size:26px;font-weight:500;letter-spacing:-.02em;line-height:1;text-box:trim-both cap alphabetic">Ground<span style="color:#4fd0b8">State</span></span></a>
+<a href="#top" aria-label="GroundState home" style="display:flex;align-items:center;gap:10px;color:#f3f0ea"><span aria-hidden="true" style="width:36px;height:36px;border-radius:4px;background:#1b1e21;border:1px solid rgba(243,240,234,0.12);display:flex;align-items:center;justify-content:center;flex-shrink:0"><svg width="25" height="25" viewBox="0 0 48 48" fill="none" style="display:block"><path d="M38.5 13.5A17 17 0 1 0 41 26" stroke="#f3f0ea" stroke-width="4.6"></path><path d="M24 26H41" stroke="#4fd0b8" stroke-width="4.6" stroke-linecap="round"></path></svg></span><span style="font-family:'Hanken Grotesk',system-ui,sans-serif;font-size:25px;font-weight:600;letter-spacing:.015em;line-height:1">Ground<span style="color:#4fd0b8">State</span></span></a>
 <sc-if value="{{ wide }}" hint-placeholder-val="{{ true }}"><nav style="display:flex;gap:28px;font-family:'JetBrains Mono',monospace;font-size:12px;letter-spacing:.08em;text-transform:uppercase;flex-wrap:wrap"><a href="#approach" style="color:#9ea3a8">Approach</a><a href="#process" style="color:#9ea3a8">Process</a><a href="#ai" style="color:#9ea3a8">AI</a><a href="#team" style="color:#9ea3a8">Team</a></nav></sc-if>
-<a href="https://calendly.com/getgroundstate/initial-diagnostic" target="_blank" rel="noopener" style="font-family:'JetBrains Mono',monospace;font-size:13px;background:#4fd0b8;color:#0f1113;padding:10px 16px;border-radius:999px;white-space:nowrap">{{ headerCta }}</a>
+<a href="https://calendly.com/getgroundstate/initial-diagnostic" target="_blank" rel="noopener" style="font-family:'JetBrains Mono',monospace;font-size:13px;background:#4fd0b8;color:#0f1113;padding:10px 16px;border-radius:6px;white-space:nowrap">{{ headerCta }}</a>
 </header>
 
 <sc-if value="{{ hudVisible }}" hint-placeholder-val="{{ true }}">
-<div style="position:fixed;right:16px;bottom:16px;z-index:10;width:168px;display:flex;flex-direction:column;gap:6px;font-family:'JetBrains Mono',monospace;font-size:10px;letter-spacing:.08em;text-transform:uppercase;padding:10px 12px;background:rgba(15,17,19,0.7);backdrop-filter:blur(8px);border:1px solid rgba(243,240,234,0.1);border-radius:8px">
-<div style="display:flex;justify-content:space-between;color:#9ea3a8"><span>System state</span><span>{{ energyText }}</span></div>
+<div class="state-hud" style="position:fixed;right:16px;bottom:16px;z-index:10;width:168px;display:flex;flex-direction:column;gap:6px;font-family:'JetBrains Mono',monospace;font-size:10px;letter-spacing:.08em;text-transform:uppercase;padding:10px 12px;background:rgba(15,17,19,0.7);backdrop-filter:blur(8px);border:1px solid rgba(243,240,234,0.1);border-radius:4px">
+<div style="display:flex;justify-content:space-between;color:#9ea3a8"><span class="state-label">System state</span><span>{{ energyText }}</span></div>
 <div style="font-size:14px;color:{{ hudColor }}">{{ stateName }}</div>
 <div style="height:3px;background:rgba(243,240,234,0.1)"><div style="height:3px;width:{{ energyPct }};background:{{ hudColor }}"></div></div>
 </div>
@@ -65,9 +77,9 @@ section{padding-top:56px!important;padding-bottom:56px!important}
 
 <section data-screen-label="Hero" style="min-height:100vh;box-sizing:border-box;padding:24vh clamp(20px,4vw,56px) 12vh;max-width:1320px;margin:0 auto;display:flex;flex-direction:column;gap:32px">
 <div style="font-family:'JetBrains Mono',monospace;font-size:clamp(14px,1.2vw,17px);font-weight:500;letter-spacing:.12em;text-transform:uppercase;color:#e08a63">GroundState: steady state, built on ground truth</div>
-<h1 style="margin:0;font-family:'Newsreader',serif;font-weight:400;font-size:clamp(52px,8.5vw,136px);line-height:.95;letter-spacing:-.02em;max-width:1100px">We find your GroundState,<br><span style="color: rgb(79, 208, 184);">and improve it.</span></h1>
-<p style="margin:0;max-width:640px;font-size:clamp(18px,1.6vw,22px);line-height:1.5;color:#d6d2ca;text-wrap:pretty">One named Outcome Owner. We find out where your business loses time and money, agree on what should improve, then build the software and automation that fixes it.</p>
-<div style="display:flex;gap:28px;align-items:center;flex-wrap:wrap"><a href="https://calendly.com/getgroundstate/initial-diagnostic" target="_blank" rel="noopener" style="background:#f3f0ea;color:#0f1113;padding:16px 24px;border-radius:999px;font-weight:600">Book a Diagnostic call</a><span style="font-family:'JetBrains Mono',monospace;font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:#9ea3a8">SCROLL TO REACH GROUNDSTATE ↓</span></div>
+<h1 style="margin:0;font-family:'Newsreader',serif;font-weight:400;font-size:clamp(52px,8.5vw,136px);line-height:1;letter-spacing:-.005em;max-width:1100px">We find your GroundState,<br><span style="color: rgb(79, 208, 184);">and improve it.</span></h1>
+<p style="margin:0;max-width:680px;font-size:clamp(18px,1.6vw,22px);line-height:1.5;color:#d6d2ca;text-wrap:pretty"><strong style="color:#f3f0ea;font-weight:600">We name one Outcome Owner.</strong> Then we find out where your business loses time and money, agree on what should improve, then build the software and automation that solves the problem.</p>
+<div style="display:flex;gap:28px;align-items:center;flex-wrap:wrap"><a href="https://calendly.com/getgroundstate/initial-diagnostic" target="_blank" rel="noopener" style="background:#f3f0ea;color:#0f1113;padding:16px 24px;border-radius:6px;font-weight:600">Book a Diagnostic call</a><span style="font-family:'JetBrains Mono',monospace;font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:#9ea3a8">SCROLL TO REACH GROUNDSTATE ↓</span></div>
 </section>
 
 <section id="approach" data-screen-label="Problem" style="padding:12vh clamp(20px,4vw,56px);max-width:1320px;margin:0 auto;display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,300px),1fr));gap:48px;align-items:start">
@@ -75,7 +87,7 @@ section{padding-top:56px!important;padding-bottom:56px!important}
 <div style="display:flex;flex-direction:column;gap:clamp(48px,22vh,240px);padding:clamp(0px,8vh,80px) 0 16vh;font-family:'Newsreader',serif;font-size:clamp(28px,3.2vw,46px);line-height:1.18;text-wrap:pretty">
 <p style="margin:0">The problem is never pinned down, so teams <em style="color:#e08a63">solve the wrong thing</em>.</p>
 <p style="margin:0">The work crosses departments, so <em style="color:#e08a63">no one owns the result</em>.</p>
-<p style="margin:0">The plan is made in a conference room. <em style="color:#e08a63">The front line is never asked</em>, so the change doesn't stick.</p>
+<p style="margin:0">The plan is made in a conference room. <em style="color:#e08a63">The frontline is never asked</em>, so the change doesn't stick.</p>
 <p style="margin:0">Projects run long and priorities shift, so <em style="color:#e08a63">support fades before results arrive</em>.</p>
 <p style="margin:0;font-family:'JetBrains Mono',monospace;font-size:12px;line-height:1.6;letter-spacing:.04em;color:#9ea3a8">Drawn from the leading causes of failure identified in a 2024 review of 49 studies on process improvement projects (Bader et al., <span style="font-style:italic">International Journal of Lean Six Sigma</span>).</p>
 </div>
@@ -84,26 +96,26 @@ section{padding-top:56px!important;padding-bottom:56px!important}
 <section data-screen-label="Outcome Owner" style="padding:16vh clamp(20px,4vw,56px);max-width:1320px;margin:0 auto;display:flex;flex-direction:column;gap:64px">
 <div style="display:flex;flex-direction:column;gap:16px"><span style="font-family:'JetBrains Mono',monospace;font-size:clamp(14px,1.2vw,17px);font-weight:500;letter-spacing:.12em;text-transform:uppercase;color:#4fd0b8">What we do differently</span><h2 style="margin:0;font-family:'Newsreader',serif;font-weight:400;font-size:clamp(44px,6vw,96px);line-height:1">One engagement.<br>One Outcome Owner.</h2></div>
 <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,260px),1fr));gap:48px">
-<div style="display:flex;flex-direction:column;gap:12px;border-top:1px solid rgba(243,240,234,0.25);padding-top:20px"><span style="font-family:'Newsreader',serif;font-size:40px;font-style:italic;color:#4fd0b8">Leads it.</span><span style="font-size:19px;line-height:1.5;color:#d6d2ca">Works inside your operation, from diagnostic to findings.</span></div>
-<div style="display:flex;flex-direction:column;gap:12px;border-top:1px solid rgba(243,240,234,0.25);padding-top:20px"><span style="font-family:'Newsreader',serif;font-size:40px;font-style:italic;color:#4fd0b8">Builds it.</span><span style="font-size:19px;line-height:1.5;color:#d6d2ca">The person who measures the result is the person who built it.</span></div>
+<div style="display:flex;flex-direction:column;gap:12px;border-top:1px solid rgba(243,240,234,0.25);padding-top:20px"><span style="font-family:'Newsreader',serif;font-size:40px;font-style:italic;color:#4fd0b8">Leads it.</span><span style="font-size:19px;line-height:1.5;color:#d6d2ca">Works inside your operation,<br class="desktop-break"> from diagnostic to findings.</span></div>
+<div style="display:flex;flex-direction:column;gap:12px;border-top:1px solid rgba(243,240,234,0.25);padding-top:20px"><span style="font-family:'Newsreader',serif;font-size:40px;font-style:italic;color:#4fd0b8">Builds it.</span><span style="font-size:19px;line-height:1.5;color:#d6d2ca">The person who measures the result is the person who builds it.</span></div>
 <div style="display:flex;flex-direction:column;gap:12px;border-top:1px solid rgba(243,240,234,0.25);padding-top:20px"><span style="font-family:'Newsreader',serif;font-size:40px;font-style:italic;color:#4fd0b8">Reports it.</span><span style="font-size:19px;line-height:1.5;color:#d6d2ca">What the evidence supports, including misses and uncertainty.</span></div>
 </div>
 <p style="margin:0;padding-top:40px;border-top:1px solid rgba(243,240,234,0.25);font-family:'Newsreader',serif;font-size:clamp(30px,3.6vw,52px);line-height:1.15;color:#f3f0ea;text-wrap:pretty">We take on only as much work as our Outcome Owners can personally lead, build, and measure.</p>
 </section>
 
-<section id="process" data-screen-label="Process" style="padding:16vh clamp(20px,4vw,56px);max-width:1320px;margin:0 auto;display:flex;flex-direction:column;gap:40px">
-<div style="display:flex;flex-direction:column;gap:16px"><span style="font-family:'JetBrains Mono',monospace;font-size:clamp(14px,1.2vw,17px);font-weight:500;letter-spacing:.12em;text-transform:uppercase;color:#4fd0b8">The proven process</span><h2 style="margin:0;font-family:'Newsreader',serif;font-weight:400;font-size:clamp(44px,6vw,96px);line-height:1">90 days, six steps</h2></div>
-<div style="display:flex;flex-direction:column;gap:6px;padding:20px;background:rgba(15,17,19,0.72);border:1px solid rgba(243,240,234,0.1);border-radius:10px">
-<div style="display:grid;grid-template-columns:{{ ganttLabelCol }} repeat(13,minmax(0,1fr));gap:4px;font-family:'JetBrains Mono',monospace;font-size:11px;color:#9ea3a8"><span></span><span>1</span><span>2</span><span>3</span><span>4</span><span>5</span><span>6</span><span>7</span><span>8</span><span>9</span><span>10</span><span>11</span><span>12</span><span>QC</span></div>
-<sc-for list="{{ rowsP }}" as="r" hint-placeholder-count="7">
+<section id="process" ref="{{ procRef }}" data-screen-label="Process" style="padding:16vh clamp(20px,4vw,56px);max-width:1320px;margin:0 auto;display:flex;flex-direction:column;gap:40px">
+<div style="display:flex;flex-direction:column;gap:16px"><span style="font-family:'JetBrains Mono',monospace;font-size:clamp(14px,1.2vw,17px);font-weight:500;letter-spacing:.12em;text-transform:uppercase;color:#4fd0b8">The proven process</span><h2 style="margin:0;font-family:'Newsreader',serif;font-weight:400;font-size:clamp(44px,6vw,96px);line-height:1">90 days, four steps</h2></div>
+<div style="display:flex;flex-direction:column;gap:6px;padding:20px;background:rgba(15,17,19,0.72);border:1px solid rgba(243,240,234,0.1);border-radius:4px">
+<div style="display:grid;grid-template-columns:{{ ganttLabelCol }} repeat(13,minmax(0,1fr));gap:4px;font-family:'JetBrains Mono',monospace;font-size:11px;color:#9ea3a8"><span>Week</span><span>1</span><span>2</span><span>3</span><span>4</span><span>5</span><span>6</span><span>7</span><span>8</span><span>9</span><span>10</span><span>11</span><span>12</span><span title="Quarter close">Qtr.</span></div>
+<sc-for list="{{ rowsP }}" as="r" hint-placeholder-count="4">
 <div onClick="{{ r.pick }}" style="cursor:pointer;display:grid;grid-template-columns:{{ ganttLabelCol }} 1fr;gap:4px;align-items:center;opacity:{{ r.op }}"><span style="font-size:14px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis">{{ r.label }}</span><div style="position:relative;height:14px"><div style="position:absolute;top:0;bottom:0;left:{{ r.left }};width:{{ r.width }};background:{{ r.color }};border-radius:2px"></div></div></div>
 </sc-for>
 </div>
-<div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,300px),1fr));grid-auto-rows:auto 1fr 1fr;gap:14px 32px">
+<div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,300px),1fr));gap:32px">
 <sc-for list="{{ phasesP }}" as="ph" hint-placeholder-count="3">
-<div style="grid-row:span 3;display:grid;grid-template-rows:subgrid"><div style="display:flex;flex-wrap:wrap;justify-content:space-between;align-items:baseline;gap:4px 12px;border-top:3px solid {{ ph.color }};padding-top:14px"><span style="font-family:'Newsreader',serif;font-size:30px">{{ ph.name }}</span><span style="font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:#9ea3a8">{{ ph.weeks }}</span></div>
+<div style="display:flex;flex-direction:column;gap:14px"><div style="display:flex;flex-wrap:wrap;justify-content:space-between;align-items:baseline;gap:4px 12px;border-top:3px solid {{ ph.color }};padding-top:14px"><span style="font-family:'Newsreader',serif;font-size:30px">{{ ph.name }}</span><span style="font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:#9ea3a8">{{ ph.weeks }}</span></div>
 <sc-for list="{{ ph.steps }}" as="s" hint-placeholder-count="2">
-<div onClick="{{ s.pick }}" style="cursor:pointer;display:flex;flex-direction:column;gap:8px;padding:20px;border-radius:10px;background:rgba(15,17,19,0.72);border:1px solid {{ s.border }}"><span style="font-family:'JetBrains Mono',monospace;font-size:12px;color:#9ea3a8">{{ s.num }} · {{ s.when }}</span><span style="font-size:20px;font-weight:600">{{ s.title }}</span><span style="font-size:16px;line-height:1.55;color:#d6d2ca">{{ s.copy }}</span></div>
+<div onClick="{{ s.pick }}" style="cursor:pointer;display:flex;flex-direction:column;gap:8px;padding:20px;border-radius:4px;background:rgba(15,17,19,0.72);border:1px solid {{ s.border }}"><span style="font-family:'JetBrains Mono',monospace;font-size:12px;color:#9ea3a8">{{ s.num }} · {{ s.when }}</span><span style="font-size:20px;font-weight:600">{{ s.title }}</span><span style="font-size:16px;line-height:1.55;color:#d6d2ca">{{ s.copy }}</span></div>
 </sc-for>
 </div>
 </sc-for>
@@ -122,7 +134,7 @@ section{padding-top:56px!important;padding-bottom:56px!important}
 <section data-screen-label="Commitments" style="padding:12vh clamp(20px,4vw,56px);max-width:1320px;margin:0 auto;display:flex;flex-direction:column;gap:40px">
 <div style="display:flex;flex-direction:column;gap:16px"><span style="font-family:'JetBrains Mono',monospace;font-size:clamp(14px,1.2vw,17px);font-weight:500;letter-spacing:.12em;text-transform:uppercase;color:#4fd0b8">Commitments</span><h2 style="margin:0;font-family:'Newsreader',serif;font-weight:400;font-size:clamp(40px,5vw,72px);line-height:1">What you can hold us to</h2></div>
 <div style="display:flex;flex-direction:column;background:rgba(15,17,19,0.72);border-radius:10px;padding:8px 28px">
-<div style="display:grid;grid-template-columns:52px minmax(0,1fr);gap:20px;align-items:start;padding:24px 0;border-bottom:1px solid rgba(243,240,234,0.12);"><span aria-hidden="true" style="width:44px;height:44px;border-radius:10px;background:#1b1e21;border:1px solid rgba(243,240,234,0.12);display:flex;align-items:center;justify-content:center;flex-shrink:0"><svg width="31" height="31" viewBox="0 0 48 48" fill="none" style="display:block"><path d="M38.5 13.5A17 17 0 1 0 41 26" stroke="#f3f0ea" stroke-width="4.6"></path><path d="M24 26H41" stroke="#4fd0b8" stroke-width="4.6" stroke-linecap="round"></path></svg></span><div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,300px),1fr));gap:10px 48px;align-items:baseline;padding-top:4px"><span style="font-family:'Newsreader',serif;font-size:clamp(22px,2.1vw,30px);line-height:1.1;color:#f3f0ea;text-wrap:balance">Named owner, start to findings</span><span style="font-size:clamp(17px,1.4vw,19px);line-height:1.45;color:#4fd0b8;text-wrap:pretty">The person who measures is the person who builds.</span></div></div>
+<div style="display:grid;grid-template-columns:52px minmax(0,1fr);gap:20px;align-items:start;padding:24px 0;border-bottom:1px solid rgba(243,240,234,0.12);"><span aria-hidden="true" style="width:44px;height:44px;border-radius:4px;background:#1b1e21;border:1px solid rgba(243,240,234,0.12);display:flex;align-items:center;justify-content:center;flex-shrink:0"><svg width="31" height="31" viewBox="0 0 48 48" fill="none" style="display:block"><path d="M38.5 13.5A17 17 0 1 0 41 26" stroke="#f3f0ea" stroke-width="4.6"></path><path d="M24 26H41" stroke="#4fd0b8" stroke-width="4.6" stroke-linecap="round"></path></svg></span><div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,300px),1fr));gap:10px 48px;align-items:baseline;padding-top:4px"><span style="font-family:'Newsreader',serif;font-size:clamp(22px,2.1vw,30px);line-height:1.1;color:#f3f0ea;text-wrap:balance">Named owner, from start to findings</span><span style="font-size:clamp(17px,1.4vw,19px);line-height:1.45;color:#4fd0b8;text-wrap:pretty">The person who measures is the person who builds.</span></div></div>
 <div style="display:grid;grid-template-columns:52px minmax(0,1fr);gap:20px;align-items:start;padding:24px 0;border-bottom:1px solid rgba(243,240,234,0.12);"><span aria-hidden="true" style="width:44px;height:44px;border-radius:10px;background:#1b1e21;border:1px solid rgba(243,240,234,0.12);display:flex;align-items:center;justify-content:center;flex-shrink:0"><svg width="31" height="31" viewBox="0 0 48 48" fill="none" style="display:block"><path d="M38.5 13.5A17 17 0 1 0 41 26" stroke="#f3f0ea" stroke-width="4.6"></path><path d="M24 26H41" stroke="#4fd0b8" stroke-width="4.6" stroke-linecap="round"></path></svg></span><div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,300px),1fr));gap:10px 48px;align-items:baseline;padding-top:4px"><span style="font-family:'Newsreader',serif;font-size:clamp(22px,2.1vw,30px);line-height:1.1;color:#f3f0ea;text-wrap:balance">Written kill criteria</span><span style="font-size:clamp(17px,1.4vw,19px);line-height:1.45;color:#4fd0b8;text-wrap:pretty">We record what would prove us wrong.</span></div></div>
 <div style="display:grid;grid-template-columns:52px minmax(0,1fr);gap:20px;align-items:start;padding:24px 0;border-bottom:1px solid rgba(243,240,234,0.12);"><span aria-hidden="true" style="width:44px;height:44px;border-radius:10px;background:#1b1e21;border:1px solid rgba(243,240,234,0.12);display:flex;align-items:center;justify-content:center;flex-shrink:0"><svg width="31" height="31" viewBox="0 0 48 48" fill="none" style="display:block"><path d="M38.5 13.5A17 17 0 1 0 41 26" stroke="#f3f0ea" stroke-width="4.6"></path><path d="M24 26H41" stroke="#4fd0b8" stroke-width="4.6" stroke-linecap="round"></path></svg></span><div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,300px),1fr));gap:10px 48px;align-items:baseline;padding-top:4px"><span style="font-family:'Newsreader',serif;font-size:clamp(22px,2.1vw,30px);line-height:1.1;color:#f3f0ea;text-wrap:balance">Weekly scoreboard</span><span style="font-size:clamp(17px,1.4vw,19px);line-height:1.45;color:#4fd0b8;text-wrap:pretty">A running record you can audit any day of the week.</span></div></div>
 <div style="display:grid;grid-template-columns:52px minmax(0,1fr);gap:20px;align-items:start;padding:24px 0;"><span aria-hidden="true" style="width:44px;height:44px;border-radius:10px;background:#1b1e21;border:1px solid rgba(243,240,234,0.12);display:flex;align-items:center;justify-content:center;flex-shrink:0"><svg width="31" height="31" viewBox="0 0 48 48" fill="none" style="display:block"><path d="M38.5 13.5A17 17 0 1 0 41 26" stroke="#f3f0ea" stroke-width="4.6"></path><path d="M24 26H41" stroke="#4fd0b8" stroke-width="4.6" stroke-linecap="round"></path></svg></span><div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,300px),1fr));gap:10px 48px;align-items:baseline;padding-top:4px"><span style="font-family:'Newsreader',serif;font-size:clamp(22px,2.1vw,30px);line-height:1.1;color:#f3f0ea;text-wrap:balance">Written findings at week 12</span><span style="font-size:clamp(17px,1.4vw,19px);line-height:1.45;color:#4fd0b8;text-wrap:pretty">Data-backed decisions on where to improve next.</span></div></div>
@@ -135,7 +147,7 @@ section{padding-top:56px!important;padding-bottom:56px!important}
 <div style="display:flex;flex-direction:column;gap:8px;border-top:3px solid #4fd0b8;padding-top:16px"><span style="font-family:'JetBrains Mono',monospace;font-size:13px;letter-spacing:.1em;color:#4fd0b8">ENTRY</span><span style="font-size:clamp(17px,1.5vw,20px);line-height:1.45;color:#f3f0ea">One consequential, cross-functional improvement that can be meaningfully tested in 90 days.</span></div>
 <div style="display:flex;flex-direction:column;gap:8px;border-top:3px solid #f3f0ea;padding-top:16px"><span style="font-family:'JetBrains Mono',monospace;font-size:13px;letter-spacing:.1em">CADENCE</span><span style="font-size:clamp(17px,1.5vw,20px);line-height:1.45;color:#f3f0ea">Weekly build cycles, a weekly scoreboard, and a review at quarter close.</span></div>
 <div style="display:flex;flex-direction:column;gap:8px;border-top:3px solid #e08a63;padding-top:16px"><span style="font-family:'JetBrains Mono',monospace;font-size:13px;letter-spacing:.1em;color:#e08a63">EXIT</span><span style="font-size:clamp(17px,1.5vw,20px);line-height:1.45;color:#f3f0ea">Steady state. Your team owns it, or we keep running it.</span></div>
-<div style="grid-column:1 / -1;display:flex;justify-content:space-between;align-items:center;gap:24px;flex-wrap:wrap;padding-top:28px;border-top:1px solid rgba(243,240,234,0.12)"><span style="font-size:clamp(18px,1.6vw,22px);color:#d6d2ca">Step one is the Diagnostic: two weeks, hard numbers, and no commitment beyond the truth.</span><a href="https://calendly.com/getgroundstate/initial-diagnostic" target="_blank" rel="noopener" style="background:#4fd0b8;color:#0f1113;padding:16px 26px;border-radius:999px;font-weight:600;font-size:17px;white-space:nowrap">Book a Diagnostic call</a></div>
+<div style="grid-column:1 / -1;display:flex;justify-content:space-between;align-items:center;gap:24px;flex-wrap:wrap;padding-top:28px;border-top:1px solid rgba(243,240,234,0.12)"><span style="display:flex;flex-direction:column;gap:6px;font-size:clamp(18px,1.6vw,22px);color:#d6d2ca"><strong style="color:#f3f0ea;font-weight:600">Step one is the Diagnostic.</strong><span>Two weeks, hard numbers, and no obligation to continue afterward.</span></span><a href="https://calendly.com/getgroundstate/initial-diagnostic" target="_blank" rel="noopener" style="background:#4fd0b8;color:#0f1113;padding:16px 26px;border-radius:6px;font-weight:600;font-size:17px;white-space:nowrap">Book a Diagnostic call</a></div>
 </div>
 </section>
 
@@ -173,11 +185,11 @@ section{padding-top:56px!important;padding-bottom:56px!important}
 <section id="book" data-screen-label="CTA" style="min-height:100vh;box-sizing:border-box;padding:18vh clamp(20px,4vw,56px) 30vh;max-width:1320px;margin:0 auto;display:flex;flex-direction:column;justify-content:center;gap:28px">
 <span style="font-family:'JetBrains Mono',monospace;font-size:clamp(14px,1.2vw,17px);font-weight:500;letter-spacing:.12em;text-transform:uppercase;color:#4fd0b8">Next step</span>
 <h2 style="margin:0;font-family:'Newsreader',serif;font-weight:400;font-size:clamp(52px,8vw,128px);line-height:.95">Let's find your<br><span style="color:#4fd0b8">GroundState.</span></h2>
-<p style="margin:0;max-width:1000px;font-family:'Newsreader',serif;font-size:clamp(28px,3.2vw,46px);line-height:1.2;color:#f3f0ea;text-wrap:pretty">Step one is the Diagnostic: two weeks, hard numbers, and no commitment beyond the truth.</p>
-<div style="display:flex;gap:32px;align-items:center;flex-wrap:wrap"><a href="https://calendly.com/getgroundstate/initial-diagnostic" target="_blank" rel="noopener" style="background:#4fd0b8;color:#0f1113;padding:18px 28px;border-radius:999px;font-weight:600;font-size:18px">Book a Diagnostic call</a></div>
+<p style="margin:0;max-width:1000px;display:flex;flex-direction:column;gap:12px;font-family:'Newsreader',serif;font-size:clamp(28px,3.2vw,46px);line-height:1.2;color:#f3f0ea;text-wrap:pretty"><strong style="font-weight:500">Step one is the Diagnostic.</strong><span>Two weeks, hard numbers, and no obligation to continue afterward.</span></p>
+<div style="display:flex;gap:32px;align-items:center;flex-wrap:wrap"><a href="https://calendly.com/getgroundstate/initial-diagnostic" target="_blank" rel="noopener" style="background:#4fd0b8;color:#0f1113;padding:18px 28px;border-radius:6px;font-weight:600;font-size:18px">Book a Diagnostic call</a></div>
 </section>
 <footer style="max-width:1320px;margin:0 auto;padding:40px clamp(20px,4vw,56px) 56px;border-top:1px solid rgba(243,240,234,0.12);display:flex;justify-content:space-between;align-items:center;gap:24px;flex-wrap:wrap">
-<div style="display:flex;align-items:center;gap:12px"><span aria-hidden="true" style="width:46px;height:46px;border-radius:10px;background:#1b1e21;border:1px solid rgba(243,240,234,0.12);display:flex;align-items:center;justify-content:center;flex-shrink:0"><svg width="32" height="32" viewBox="0 0 48 48" fill="none" style="display:block"><path d="M38.5 13.5A17 17 0 1 0 41 26" stroke="#f3f0ea" stroke-width="4.6"></path><path d="M24 26H41" stroke="#4fd0b8" stroke-width="4.6" stroke-linecap="round"></path></svg></span><span style="font-family:'Newsreader',serif;font-size:32px;font-weight:500;letter-spacing:-.02em;line-height:1;text-box:trim-both cap alphabetic">Ground<span style="color:#4fd0b8">State</span></span></div>
+<div style="display:flex;align-items:center;gap:12px"><span aria-hidden="true" style="width:46px;height:46px;border-radius:4px;background:#1b1e21;border:1px solid rgba(243,240,234,0.12);display:flex;align-items:center;justify-content:center;flex-shrink:0"><svg width="32" height="32" viewBox="0 0 48 48" fill="none" style="display:block"><path d="M38.5 13.5A17 17 0 1 0 41 26" stroke="#f3f0ea" stroke-width="4.6"></path><path d="M24 26H41" stroke="#4fd0b8" stroke-width="4.6" stroke-linecap="round"></path></svg></span><span style="font-family:'Hanken Grotesk',system-ui,sans-serif;font-size:31px;font-weight:600;letter-spacing:.015em;line-height:1">Ground<span style="color:#4fd0b8">State</span></span></div>
 <span style="font-family:'JetBrains Mono',monospace;font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:#9ea3a8">© 2026 GroundState</span>
 </footer>
 </main>
@@ -192,14 +204,12 @@ class Component extends DCLogic {
   state = { e: 1, step: 0, faq: -1, wide: window.innerWidth >= 760 };
   rootRef = React.createRef(); canvasRef = React.createRef(); procRef = React.createRef();
   steps = [
-    { num: '01', title: 'GroundState Diagnostic', when: 'Weeks 1–2', s: 1, e: 2, ph: 0, copy: 'We map where time, money, and work actually go. You see your business as it really operates, sometimes for the first time.' },
-    { num: '02', title: 'Outcome Agreement, Baselines & Targets ', when: 'Week 2', s: 2, e: 2, ph: 0, copy: "We write down what should improve, how it's measured, and what would prove us wrong. If we can't name it, we don't start." },
-    { num: '03', title: 'Build in weekly cycles', when: 'Weeks 3–12', s: 3, e: 12, ph: 1, copy: 'Small builds, made side by side with your team inside your operation. Each one is reviewed the week it ships. No big reveals or launches.' },
-    { num: '04', title: 'Weekly scoreboard', when: 'Every week', s: 3, e: 12, ph: 1, copy: "What moved, what didn't, what we changed and why. In writing, including the weeks nothing moved." },
-    { num: '05', title: 'Steady State Outcome', when: 'Week 12', s: 12, e: 12, ph: 2, copy: 'Written findings, working systems, and trained owners. Your team takes it over, or GroundState keeps improving it.' },
-    { num: '06', title: 'Next GroundState', when: 'Quarter close', s: 13, e: 13, ph: 2, copy: 'Both sides review the evidence: did the promise hold? Then we decide together on continuation, expansion, or a handover process.' }
+    { num: '01', title: 'GroundState Diagnostic', when: 'Weeks 1–2', s: 1, e: 2, ph: 0, copy: "We map where time, money, and work actually go; agree on the outcome; establish baselines and targets; and record what would prove us wrong." },
+    { num: '02', title: 'Build in weekly cycles', when: 'Weeks 3–12', s: 3, e: 12, ph: 1, copy: "Small builds, made side by side with your team and reviewed the week they ship. A weekly scoreboard records what moved, what didn't, what changed, and why." },
+    { num: '03', title: 'Steady State Outcome', when: 'Week 12', s: 12, e: 12, ph: 2, copy: 'Written findings, working systems, and trained owners. Your team takes it over, or GroundState keeps improving it.' },
+    { num: '04', title: 'Next GroundState', when: 'Quarter close', s: 13, e: 13, ph: 2, copy: 'Both sides review the evidence: did the promise hold? Then we decide together on continuation, expansion, or a handover process.' }
   ];
-  phases = ['Find the truth', 'Move the number', 'Keep what works'];
+  phases = ['Find the truth', 'Move the numbers', 'Keep what works'];
   phaseCol = ['#4fd0b8', '#f3f0ea', '#e08a63'];
   faqList = [
     { q: "What if the numbers don't move?", a: "We record what would prove us wrong before we start. The weekly scoreboard shows what moved, what didn't, what we changed and why, in writing, including the weeks nothing moved." },
@@ -216,7 +226,7 @@ class Component extends DCLogic {
       this.p = clamp(-rect.top / Math.max(1, rect.height - vh), 0, 1);
       const e = Math.round((1 - sm(0.03, 0.93, this.p)) * 100) / 100;
       let step = this.state.step; const pr = this.procRef.current;
-      if (pr) { const b = pr.getBoundingClientRect(); step = Math.floor(clamp(-b.top / Math.max(1, b.height - vh), 0, 0.9999) * 7); }
+      if (pr) { const b = pr.getBoundingClientRect(); step = Math.floor(clamp(-b.top / Math.max(1, b.height - vh), 0, 0.9999) * this.steps.length); }
       if (e !== this.state.e || step !== this.state.step) this.setState({ e, step });
     };
     this.onResize = () => { this.resize(); this.onScroll(); const wide = window.innerWidth >= 760; if (wide !== this.state.wide) this.setState({ wide }); };
@@ -313,13 +323,13 @@ class Component extends DCLogic {
     const S = this.steps[step], hot = e > 0.02;
     return {
       rootRef: this.rootRef, canvasRef: this.canvasRef, procRef: this.procRef,
-      showHud: this.props.showHud ?? true, hudVisible: (this.props.showHud ?? true) && this.state.wide, ganttLabelCol: this.state.wide ? 'clamp(84px,26vw,220px)' : '28px', headerCta: this.state.wide ? 'Book a Diagnostic call' : 'Book a call', wide: this.state.wide, headPos: this.state.wide ? 'sticky' : 'static',
+      showHud: this.props.showHud ?? true, hudVisible: this.props.showHud ?? true, ganttLabelCol: this.state.wide ? 'clamp(84px,26vw,220px)' : '34px', headerCta: this.state.wide ? 'Book a Diagnostic call' : 'Book a call', wide: this.state.wide, headPos: this.state.wide ? 'sticky' : 'static',
       energyText: 'E = ' + e.toFixed(2), energyPct: (e * 100) + '%',
       hudColor: hot ? '#e08a63' : '#4fd0b8',
       stateName: e > 0.8 ? 'CHAOTIC · unmeasured' : e > 0.55 ? 'Measured' : e > 0.3 ? 'Settling' : hot ? 'Near ground' : 'Ground state',
       cur: { ...S, phase: this.phases[S.ph], color: this.phaseCol[S.ph] },
       rowsP: this.steps.map((r, i) => ({ ...r, label: this.state.wide ? r.num + '\u00a0 ' + r.title : r.num, left: ((r.s - 1) / 13 * 100) + '%', width: ((r.e - r.s + 1) / 13 * 100) + '%', color: this.phaseCol[r.ph], op: i === step ? 1 : 0.4, pick: () => this.setState({ step: i }) })),
-      phasesP: this.phases.map((name, pi) => ({ name, color: this.phaseCol[pi], weeks: ['Weeks 1–3', 'Weeks 3–12', 'Week 12 & quarter close'][pi],
+      phasesP: this.phases.map((name, pi) => ({ name, color: this.phaseCol[pi], weeks: ['Weeks 1–2', 'Weeks 3–12', 'Week 12 & quarter close'][pi],
         steps: this.steps.map((s, i) => ({ ...s, i })).filter(s => s.ph === pi).map(s => ({ ...s, border: s.i === step ? this.phaseCol[pi] : 'rgba(243,240,234,0.1)', pick: () => this.setState({ step: s.i }) })) })),
       faqs: this.faqList.map((f, i) => ({ ...f, open: i === faq, sign: i === faq ? '–' : '+', toggle: () => this.setState({ faq: i === faq ? -1 : i }) }))
     };
