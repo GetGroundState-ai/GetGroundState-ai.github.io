@@ -112,11 +112,11 @@ footer{padding-bottom:64px!important}
 <div onClick="{{ r.pick }}" style="cursor:pointer;display:grid;grid-template-columns:{{ ganttLabelCol }} 1fr;gap:4px;align-items:center;opacity:{{ r.op }}"><span style="font-size:14px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis">{{ r.label }}</span><div style="position:relative;height:14px"><div style="position:absolute;top:0;bottom:0;left:{{ r.left }};width:{{ r.width }};background:{{ r.color }};border-radius:0"></div></div></div>
 </sc-for>
 </div>
-<div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,300px),1fr));gap:32px">
+<div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,300px),1fr));grid-auto-rows:1fr;gap:32px">
 <sc-for list="{{ phasesP }}" as="ph" hint-placeholder-count="3">
 <div style="display:flex;flex-direction:column;gap:14px"><div style="display:flex;flex-wrap:wrap;justify-content:space-between;align-items:baseline;gap:4px 12px;border-top:3px solid {{ ph.color }};padding-top:14px"><span style="font-family:'Newsreader',serif;font-size:30px">{{ ph.name }}</span><span style="font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:#9ea3a8">{{ ph.weeks }}</span></div>
 <sc-for list="{{ ph.steps }}" as="s" hint-placeholder-count="2">
-<div onClick="{{ s.pick }}" style="cursor:pointer;display:flex;flex-direction:column;gap:8px;padding:20px;border-radius:4px;background:rgba(15,17,19,0.72);border:1px solid {{ s.border }}"><span style="font-family:'JetBrains Mono',monospace;font-size:12px;color:#9ea3a8">{{ s.num }} · {{ s.when }}</span><span style="font-size:20px;font-weight:600">{{ s.title }}</span><span style="font-size:16px;line-height:1.55;color:#d6d2ca">{{ s.copy }}</span></div>
+<div onClick="{{ s.pick }}" style="cursor:pointer;flex:1;display:flex;flex-direction:column;gap:8px;padding:20px;border-radius:4px;background:rgba(15,17,19,0.72);border:1px solid {{ s.border }}"><span style="font-family:'JetBrains Mono',monospace;font-size:12px;color:#9ea3a8">{{ s.num }} · {{ s.when }}</span><span style="font-size:20px;font-weight:600">{{ s.title }}</span><span style="font-size:16px;line-height:1.55;color:#d6d2ca">{{ s.copy }}</span></div>
 </sc-for>
 </div>
 </sc-for>
