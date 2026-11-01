@@ -33,13 +33,25 @@
 <style>html{scroll-behavior:smooth}body{margin:0;background:#0f1113}a{color:#4fd0b8;text-decoration:none}a:hover{color:#f3f0ea}
 main [style*="border-radius:"],.state-hud,a[href*="calendly.com"]{border-radius:0!important}
 .logo-tile,main .logo-tile{border-radius:4px!important}
+header{background:rgba(15,17,19,.94)!important;backdrop-filter:none!important}
+.state-hud{display:none!important}
+main section:not([data-screen-label="Hero"]):not([data-screen-label="Proof"]){padding-top:128px!important;padding-bottom:128px!important}
+[data-screen-label="Proof"]{padding-top:64px!important;padding-bottom:64px!important}
+[data-screen-label="CTA"]{min-height:auto!important}
+nav,nav a,main [style*="text-transform:uppercase"]{text-transform:none!important;letter-spacing:.02em!important}
+main em,main [style*="font-style:italic"]{font-style:normal!important}
+#work>div:nth-child(2)>div,#team>div:nth-child(2)>div{background:#14171a!important;border-color:rgba(243,240,234,.1)!important}
+a[href*="calendly.com"]{transition:background-color 160ms ease-out,color 160ms ease-out}
+a[href*="calendly.com"]:hover{background:#d6d2ca!important;color:#0f1113!important}
+a:focus-visible,[onClick]:focus-visible{outline:2px solid #4fd0b8;outline-offset:4px}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
 @media (max-width:720px){
 header{gap:10px!important;padding:12px!important}
 header>a:first-child{gap:8px!important}
 header>a:first-child .logo-tile{width:32px!important;height:32px!important}
 header>a:first-child>span:last-child{font-size:21px!important}
 header>a:last-child{font-size:11px!important;padding:9px 10px!important}
-section{padding-top:56px!important;padding-bottom:56px!important}
+section{padding-top:64px!important;padding-bottom:64px!important}
 [data-screen-label="Hero"]{min-height:92svh;padding-top:128px!important;padding-bottom:56px!important}
 [data-screen-label="CTA"]{min-height:auto;padding-top:72px!important;padding-bottom:88px!important}
 #approach{gap:32px!important;padding-top:56px!important}
@@ -51,13 +63,7 @@ section{padding-top:56px!important;padding-bottom:56px!important}
 #team{gap:48px!important}
 #process,[data-screen-label="Commitments"]{gap:28px!important}
 .desktop-break{display:none}
-.state-hud{left:6px!important;right:6px!important;bottom:max(6px,env(safe-area-inset-bottom))!important;width:auto!important;min-height:28px;box-sizing:border-box;flex-direction:row!important;align-items:center;gap:8px!important;padding:5px 8px!important;border-radius:0!important}
-.state-hud{letter-spacing:.04em!important}
-.state-label{font-size:0}
-.state-label::after{content:"STATE";font-size:9px}
-.state-hud>div:first-child{display:contents!important}
-.state-hud>div:nth-child(2){font-size:11px!important;white-space:nowrap}
-.state-hud>div:nth-child(3){flex:1;min-width:36px}
+.state-hud{display:none!important}
 footer{padding-bottom:64px!important}
 }</style>
 </helmet>
@@ -222,15 +228,14 @@ class Component extends DCLogic {
       let step = this.state.step; const pr = this.procRef.current;
       if (pr) { const b = pr.getBoundingClientRect(); step = Math.floor(clamp(-b.top / Math.max(1, b.height - vh), 0, 0.9999) * this.steps.length); }
       if (e !== this.state.e || step !== this.state.step) this.setState({ e, step });
+      requestAnimationFrame(() => this.draw());
     };
     this.onResize = () => { this.resize(); this.onScroll(); const wide = window.innerWidth >= 760; if (wide !== this.state.wide) this.setState({ wide }); };
     document.addEventListener('scroll', this.onScroll, { passive: true, capture: true });
     window.addEventListener('resize', this.onResize);
-    this.resize(); this.onScroll();
-    const loop = () => { this.draw(); this.raf = requestAnimationFrame(loop); }; loop();
+    this.resize(); this.onScroll(); this.draw();
   }
   componentWillUnmount() {
-    cancelAnimationFrame(this.raf);
     document.removeEventListener('scroll', this.onScroll, { capture: true });
     window.removeEventListener('resize', this.onResize);
   }

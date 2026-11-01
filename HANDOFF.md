@@ -248,3 +248,13 @@ No data fetching.
 - `GroundState Site.dc.html`: the full design reference (markup and logic).
 - `support.js`, `image-slot.js`: prototype runtime only; not needed in production. Use normal `<img>` tags instead of image slots.
 - `logo/`, `images/`: assets.
+
+## Current visual implementation
+
+The shipped `index.html` and editable `GroundState Site.dc.html` are intentionally identical.
+
+- The dark control-room palette, Newsreader/Hanken Grotesk pairing, teal ground signal, and orange diagnostic accents remain the visual direction.
+- Desktop section spacing uses a 128px rhythm; the compact proof strip uses 64px. Mobile sections use 64px, with explicit hero and closing-CTA spacing.
+- Navigation and micro-labels use sentence case with restrained tracking. Italics are not used as an emphasis system.
+- The system-state HUD is hidden. The ground-plane canvas redraws on load, resize, and scroll rather than running a continuous decorative animation.
+- Card surfaces use solid `#14171A` with quiet hairlines. Booking links have explicit hover transitions, and interactive elements have visible keyboard focus rings.
